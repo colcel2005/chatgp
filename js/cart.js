@@ -10,6 +10,9 @@ function addToCart(product) {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
+
+  updateCartUI(); // 🔥 IMPORTANTE
+
   alert("Producto agregado");
 }
 
